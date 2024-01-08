@@ -33,7 +33,7 @@ data "aws_subnets" "public" {
   }
 }
 #cluster provision
-resource "aws_eks_cluster" "example" {
+resource "eks-cluster-cloud" "example" {
   name     = "EKS_CLOUD1"
   role_arn = aws_iam_role.example.arn
 
